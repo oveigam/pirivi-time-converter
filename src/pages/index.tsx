@@ -35,14 +35,19 @@ const Home: NextPage = () => {
           value={hora}
           onChange={(date) => setHora(date)}
         />
-        <Tooltip label="Cuando le Salga de la Polla a Pirivi Time">
-          <Button
-            disabled={!hora}
-            onClick={() => setHoraPirivi(canvioHora(hora))}
-          >
-            Convertir a CSPPT
-          </Button>
-        </Tooltip>
+        <Stack align="center" spacing={5}>
+          <Tooltip label="Cuando le Salga de la Polla a Pirivi Time">
+            <Button
+              disabled={!hora}
+              onClick={() => setHoraPirivi(canvioHora(hora))}
+            >
+              Convertir a CSPPT
+            </Button>
+          </Tooltip>
+          <Text size="sm" color="dimmed">
+            (Cuando le Salga de la Polla a Pirivi Time)
+          </Text>
+        </Stack>
         {!!horaPirivi && (
           <Stack mt="xl" align="center">
             <Title order={4} align="center">
