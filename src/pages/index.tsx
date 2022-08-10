@@ -5,8 +5,8 @@ import dayjs from "dayjs";
 import type { NextPage } from "next";
 import Image from "next/image";
 import { useState } from "react";
-import canvioHora from "../util/canvioHora";
-import getTzOffset from "../util/getTzOffset";
+import { canvioHora } from "../util/canvioHora";
+import { getTzOffset } from "../util/getTzOffset";
 
 import badPic from "../assets/bad.png";
 

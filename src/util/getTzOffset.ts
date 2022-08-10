@@ -1,6 +1,6 @@
 import dayjs from "dayjs";
 
-export default function getTazOffset() {
+export function getTzOffset() {
   const offset = dayjs().utcOffset();
   if (!offset || offset === 0) {
     return "+00:00";
