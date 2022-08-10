@@ -12,7 +12,7 @@ const MyApp: AppType = ({ Component, pageProps }) => {
   return (
     <>
       <Head>
-        <title>Pivi Time Converter</title>
+        <title>Pirivi Time Converter</title>
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
